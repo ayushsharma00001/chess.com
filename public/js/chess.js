@@ -116,5 +116,3 @@ socket.on("move",(move)=>{
     chess.move(move);
     renderBoard();
 })
-
-renderBoard();
