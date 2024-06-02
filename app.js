@@ -48,10 +48,10 @@ io.on("connection",(uniqueSocket)=>{
 
     uniqueSocket.on("disconnect",()=>{
         if(uniqueSocket.id === players.white){
-            delete players.white;
+            players.white = null;
         }
         else if(uniqueSocket.id === players.black){
-            delete players.black;
+            players.black = null;
         }
     });
 
